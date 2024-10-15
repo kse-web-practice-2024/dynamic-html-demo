@@ -1,0 +1,61 @@
+body {
+    background: #D9D9D9;
+    font-size: 16px;
+    font-family: Arial, serif;
+}
+
+.main-image {
+    margin: 20px auto;
+    display: block;
+    max-width: 200px;
+}
+
+.cat-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cat-item {
+    border-radius: 10px;
+    background: #D4CACA;
+    border: 1px solid #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 5px auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    gap: 10px;
+}
+
+.cat-item:after {
+    display: block;
+    content: "";
+    background-image: url("./paw.png");
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.cat-item-photo {
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.cat-item-title {
+    font-size: 22px;
+    grid-column-start: 2;
+    margin: 0;
+}
+
+.cat-item-description {
+    font-size: 14px;
+    grid-column-start: 2;
+    margin: 0;
+    padding: 0;
+}
