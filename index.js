@@ -1,4 +1,4 @@
-const API_KEY = "live_qNGmmIapMgENtt7DfBD9VQVqohCHDu4AepQDIW3LfFQ0BhJ1wyV77I6cnM6aRfRn";
+const API_KEY = "****";
 
 
 fetch('https://api.thecatapi.com/v1/breeds?api_key=' + API_KEY).then(res => res.json()).then((data) => {
@@ -8,7 +8,7 @@ fetch('https://api.thecatapi.com/v1/breeds?api_key=' + API_KEY).then(res => res.
     });
 
     const container = document.body.querySelector('.cat-list');
-    container.innerHTML = elements.join("");
+    // container.innerHTML = elements.join("");
 })
 
 function render(img, name, description) {
